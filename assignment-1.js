@@ -42,15 +42,14 @@
 // a. Remove number "6" from the array and console the length of the array.
     var array1= ["1", "2", "3", "4", "5", "6", "7"] ;
     array1.splice(5,1);
-
     console.log(array1.length)
 
 // b. Convert all the items of the array to data type number and console each items data type, use any of the array iteration methods provided by JS for iteration.
-    var newarry=new Array()
+    var newArray = [];
     for (var x=0;x<array1.length;x++){
-        newarry[x]=parseInt(array1[x]);
-    }
-    console.log(newarry);
+        newArray[x] = Number(array1[x]);
+        console.log(`${newArray[x]} is of type ${typeof newArray[x]}`);
+      }
 
 //c. Remove last three items of the array, use JS provided array method, then console the array and then add "one" and "two" (strings) to the beginning of the array and console the array.
     console.log(array1);
